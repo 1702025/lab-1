@@ -30,7 +30,7 @@ int main()
   }
   if(user==3)
   {
-    search_unsorted_arry(size,arry);
+    //search_unsorted_arry(size,arry);
   }
   if(user==4)
   {
@@ -39,5 +39,8 @@ int main()
     std::cin>>num;
     search_sorted_arry(size,arry,num,var);
   }
-
+  for(var=0;var<size;var++)
+  {
+    cout<<arry[var];
+  }
 }
