@@ -43,13 +43,13 @@ int search_unsorted_arry(int size,int arry[])
     if(arry[var]==num)
     {
       std::cout<<"searching number is = ";
-      std::cout<<num;
+      std::cout<<num<<"       ";
       return 0;
     }
   }
   if(arry[var]!=0)
   {
-    std::cout<<"not valid ";
+    std::cout<<"not found ";
   }
 }
 

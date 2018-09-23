@@ -30,7 +30,7 @@ int main()
   }
   if(user==3)
   {
-    //search_unsorted_arry(size,arry);
+    search_unsorted_arry(size,arry);
   }
   if(user==4)
   {
