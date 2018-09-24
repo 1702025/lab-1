@@ -37,26 +37,31 @@ int main()
   }
   if(user==4)
   {
-    int var=0,num;
+    int var,var1,num;
     std::cout<<"enter your number = ";
     std::cin>>num;
     for (var=0;var<size;var++)
     {
-      if (arry[var]<arry[var+1])
+      for (var1=var+1;var1<size-1;var1++)
       {
-        search_sorted_arry(size,arry,num,var);
-        std::cout<<"arry are sorted ";
+        if (arry[var]<arry[var1])
+       {
+        sort_arry(size,arry);
+        for(var=0;var<size;var++)
+        {
+          std::cout<<arry[var]<<"  ";
+        }
+        search_sorted_arry(size,arry,num,0);
+      //  std::cout<<"arry are sorted ";
         return 0;
-      }
-      else
-      {
-        search_unsorted_arry(size,arry,num);
-         cout<<"arry are not sorted ";
-      }
-    }
+       }
+     }
+   }
   }
+
+
   for(var=0;var<size;var++)
-  {
+   {
     cout<<"    "<<arry[var];
-  }
+   }
 }

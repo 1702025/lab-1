@@ -61,10 +61,9 @@ int search_sorted_arry(int size,int arry[],int num,int var)
    }
    else
    {
-     var++;
-     search_sorted_arry(size,arry,num,var);
+     search_sorted_arry(size,arry,num,++var);
    }
-   if(var>=size)
+   if(var>size)
    {
      std::cout<<"not found";
      return 0;
