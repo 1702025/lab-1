@@ -30,15 +30,30 @@ int main()
   }
   if(user==3)
   {
-    search_unsorted_arry(size,arry);
+    int num;
+    std::cout<<"Enter the search number = ";
+    std::cin>>num;
+    search_unsorted_arry(size,arry,num);
   }
   if(user==4)
   {
     int var=0,num;
     std::cout<<"enter your number = ";
     std::cin>>num;
-    
-    search_sorted_arry(size,arry,num,var);
+    for (var=0;var<size;var++)
+    {
+      if (arry[var]<arry[var+1])
+      {
+        search_sorted_arry(size,arry,num,var);
+        std::cout<<"arry are sorted ";
+        return 0;
+      }
+      else
+      {
+        search_unsorted_arry(size,arry,num);
+         cout<<"arry are not sorted ";
+      }
+    }
   }
   for(var=0;var<size;var++)
   {

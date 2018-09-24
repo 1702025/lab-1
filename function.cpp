@@ -33,11 +33,9 @@ int sort_arry(int size,int arry[])
 }
 
 
-int search_unsorted_arry(int size,int arry[])
+int search_unsorted_arry(int size,int arry[],int num)
 {
-  int num,var;
-  std::cout<<"Enter the search number = ";
-  std::cin>>num;
+  int var;
   for(var=0;var<size;var++)
   {
     if(arry[var]==num)
