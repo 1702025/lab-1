@@ -37,10 +37,11 @@ int main()
     int var=0,num;
     std::cout<<"enter your number = ";
     std::cin>>num;
+    
     search_sorted_arry(size,arry,num,var);
   }
   for(var=0;var<size;var++)
   {
-    cout<<arry[var];
+    cout<<"    "<<arry[var];
   }
 }

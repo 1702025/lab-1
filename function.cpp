@@ -43,7 +43,7 @@ int search_unsorted_arry(int size,int arry[])
     if(arry[var]==num)
     {
       std::cout<<"searching number is = ";
-      std::cout<<num<<"       ";
+      std::cout<<var<<"       ";
       return 0;
     }
   }
@@ -58,14 +58,15 @@ int search_sorted_arry(int size,int arry[],int num,int var)
 {
    if(arry[var]==num)
    {
-     std::cout<<num;
+     std::cout<<var;
      return 0;
    }
-   else if(var++==num)
+   else
    {
+     var++;
      search_sorted_arry(size,arry,num,var);
    }
-   else if(var<size)
+   if(var>=size)
    {
      std::cout<<"not found";
      return 0;
