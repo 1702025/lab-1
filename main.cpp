@@ -60,6 +60,13 @@ int main()
   }
 
 
+if(user==5)
+ {
+   rotatae_arry(size,arry);
+ }
+
+
+
   for(var=0;var<size;var++)
    {
     cout<<"    "<<arry[var];

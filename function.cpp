@@ -1,5 +1,6 @@
-#include <iostream>
+ #include <iostream>
 #include "header.h"
+using namespace std;
 int reversing_arry(int size ,int arry[])
 {
   int var1,var2,temp;
@@ -68,4 +69,21 @@ int search_sorted_arry(int size,int arry[],int num,int var)
      std::cout<<"not found";
      return 0;
    }
+}
+
+int rotatae_arry(int size,int arry[])
+{
+   int step,var1,var2,tem;
+   std::cout<<"enter your step = ";
+   std::cin>>step;
+   for (var1=0;var1<step;var1++)
+  {
+    tem=arry[0];
+    for (var2=0;var2<size-1;var2++)
+     {
+       arry[var2]=arry[var2+1];
+     }
+      arry[size-1]=tem;
+  }
+
 }
